@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="кнопка.css">
+    <title></title>
+</head>
+<body>
+
+
+
+
+
+
+
+<button class="btn" onclick="showModal()">Регистрация</button>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Регистрация на игру:</h2>
+        <form>
+            <label for="username">Как к Вам обращаться?</label>
+            <input type="text" id="username" name="username" placeholder="Ваше имя или прозвище :)" required>
+
+            <label for="team-name">Какое название у вашей команды?</label>
+            <input type="text" id="team-name" name="team-name" placeholder="Если нет команды, напишите БК" required>
+
+            <label for="teamSize">Сколько игроков в вашей команде?</label>
+            <select id="teamSize" name="team-size" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+
+            <label for="phone">Ваш номер телефона</label>
+            <input type="tel" id="phone" name="phone" placeholder="Введите номер телефона" required>
+
+            <label>Хотите ли вы, чтобы к вам добавили легионеров?</label><br>
+            <input type="radio" id="yes" name="legioners" value="yes" required>
+            <label for="yes">Да, хотим! Вместе веселее!</label>
+            <br>
+            <input type="radio" id="no" name="legioners" value="no" required>
+            <label for="no">Нет, мы хотим играть своим составом, никого добавлять не нужно.</label><br><br>
+
+            <input type="submit" value="Зарегистрироваться">
+        </form>
+    </div>
+</div>
+
+<script>
+    function showModal() {
+        document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+
+    function handleFormSubmit(event) {
+        event.preventDefault(); // Предотвращаем стандартное поведение формы
+        // Здесь можно добавить код для обработки данных формы, например, отправку на сервер
+
+        // После завершения обработки закрываем модальное окно
+        closeModal();
+        // Можно добавить уведомление о успешной регистрации
+        alert("Вы успешно зарегистрировались!");
+    }
+
+
+    window.onclick = function(event) {
+        if (event.target === document.getElementById("myModal")) {
+            closeModal();
+        }
+    }
+</script>
+
+
+
+
+</body>
+</html>

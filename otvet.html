@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="otvet.css">
+	<title></title>
+</head>
+<body>
+
+
+
+
+<header>
+        <div class="container">
+            <div class="logo">
+                <h1>КвизМания</h1>
+            </div>
+            <nav>
+                <ul>
+                    <b><li><a href="file:///C:/Users/User/Desktop/сайт2/квиз.html">Главная</a></li></b>
+                    <b><li><a href="file:///C:/Users/User/Desktop/сайт2/расписание.html?">Расписание</a></li></b>
+                    <b><li><a href="file:///C:/Users/User/Desktop/сайт2/vop1.html">Квиз</a></li></b>
+            
+                </ul>
+            </nav>
+        </div>
+ </header>
+
+<div class="quiz-container">
+        <h1>Понравилось?</h1>
+        <div class="question">
+            <p class="question-text">У нас есть игры по множеству тематик. Выбирайте, что вам больше всего нравится, регистрируйтесь и приходите!</p>
+            <div class="flex">
+                
+                <img src="https://i.pinimg.com/564x/09/e8/a6/09e8a66e765d72f5140f822da4e0f7c3.jpg" width="520px" height="440px" alt="Кадр из фильма" class="question-image">
+                <form action="file:///C:/Users/User/Desktop/сайт2/расписание.html" target="_blank">
+   <button><b>Зарегистрироваться на игру</b></button>
+
+           
+        </div></div>
+        
+
+    <script src="script.js"></script>
+</body>
+
+<script >
+function checkAnswer(answer) {
+    const correctAnswer = 'D'; // Задайте правильный ответ
+    const resultDiv = document.querySelector('.result');
+
+    if (answer === correctAnswer) {
+        resultDiv.textContent = 'Правильно! Это фильм Стражи Галактики 3.';
+        resultDiv.style.color = 'green';
+    } else {
+        resultDiv.textContent = 'Неправильно! Попробуйте еще раз.';
+        resultDiv.style.color = 'red';
+    }
+}
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

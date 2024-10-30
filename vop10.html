@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="vop1.css">
+	<title></title>
+</head>
+<body>
+
+<header>
+        <div class="container">
+            <div class="logo">
+                <h1>КвизМания</h1>
+            </div>
+            <nav>
+                <ul>
+                    <b><li><a href="file:///C:/Users/User/Desktop/сайт2/квиз.html">Главная</a></li></b>
+                    <b><li><a href="file:///C:/Users/User/Desktop/сайт2/расписание.html?">Расписание</a></li></b>
+                    <b><li><a href="file:///C:/Users/User/Desktop/сайт2/vop1.html">Квиз</a></li></b>
+            
+                </ul>
+            </nav>
+        </div>
+ </header>
+
+<div class="quiz-container">
+        <h1>Викторина по фильмам</h1>
+        <div class="question">
+            <p class="question-text">Как называется цветок в фильме Леон?</p>
+            <div class="flex">
+                <a class="strelka" href="file:///C:/Users/User/Desktop/сайт2/vop9.html">🡄</a>
+                <img src="https://i.pinimg.com/originals/37/94/9d/37949d7ce463935ad926609cd5de16fa.jpg" width="490px" height="440px" alt="Кадр из фильма" class="question-image">
+                <a class="strelka" href="file:///C:/Users/User/Desktop/сайт2/otvet.html">🡆</a>
+
+           
+        </div></div>
+        <div class="answers">
+            <button class="answer-button" onclick="checkAnswer('A')">Кактус</button>
+            <button class="answer-button" onclick="checkAnswer('B')">Фикус</button>
+            <button class="answer-button" onclick="checkAnswer('C')">Алоэ</button>
+            <button class="answer-button" onclick="checkAnswer('D')">Аглаонема</button>
+
+
+        </div>
+        <div class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+<script >
+function checkAnswer(answer) {
+    const correctAnswer = 'D'; // Задайте правильный ответ
+    const resultDiv = document.querySelector('.result');
+
+    if (answer === correctAnswer) {
+        resultDiv.textContent = 'Правильно! Это  цветок Аглаонема.';
+        resultDiv.style.color = 'green';
+    } else {
+        resultDiv.textContent = 'Неправильно! Попробуйте еще раз.';
+        resultDiv.style.color = 'red';
+    }
+    function finishQuiz() {
+    const resultDiv = document.querySelector('.result');
+    const message = `Вы ответили правильно на ${score} из ${totalQuestions} вопросов.\n\nПонравилось?`;
+
+    // Всплывающее окно с вопросом
+    if (confirm(message)) {
+        alert('Спасибо за участие!');
+    } else {
+        alert('Надеемся, вы вернетесь к нам!');
+    }
+}
+}
+</script>
+
+</body>
+</html>

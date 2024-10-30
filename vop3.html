@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="vop1.css">
+	<title></title>
+</head>
+<body>
+
+<header>
+        <div class="container">
+            <div class="logo">
+                <h1>КвизМания</h1>
+            </div>
+            <nav>
+                <ul>
+                    <b><li><a href="file:///C:/Users/User/Desktop/сайт2/квиз.html">Главная</a></li></b>
+                    <b><li><a href="file:///C:/Users/User/Desktop/сайт2/расписание.html?">Расписание</a></li></b>
+                    <b><li><a href="file:///C:/Users/User/Desktop/сайт2/vop1.html">Квиз</a></li></b>
+            
+                </ul>
+            </nav>
+        </div>
+ </header>
+
+<div class="quiz-container">
+        <h1>Викторина по фильмам</h1>
+        <div class="question">
+            <p class="question-text">Из какого мультфильма этот персонаж?</p>
+            <div class="flex">
+                <a class="strelka" href="file:///C:/Users/User/Desktop/сайт2/vop2.html">🡄</a>
+                <img src="https://avatars.dzeninfra.ru/get-zen_doc/3518430/pub_5fbeabe4d81aaf181b90879c_5fbeac5d9e83245705aa5a18/scale_1200" width="520px" height="440px" alt="Кадр из фильма" class="question-image">
+                <a class="strelka" href="file:///C:/Users/User/Desktop/сайт2/vop4.html">🡆</a>
+
+           
+        </div></div>
+        <div class="answers">
+            <button class="answer-button" onclick="checkAnswer('A')">Головоломка</button>
+            <button class="answer-button" onclick="checkAnswer('B')">Рапунцель: Запутанная история</button>
+            <button class="answer-button" onclick="checkAnswer('C')">Коралина в стране кошмаров</button>
+            <button class="answer-button" onclick="checkAnswer('D')">Энканто</button>
+
+
+        </div>
+        <div class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+<script >
+function checkAnswer(answer) {
+    const correctAnswer = 'C'; // Задайте правильный ответ
+    const resultDiv = document.querySelector('.result');
+
+    if (answer === correctAnswer) {
+        resultDiv.textContent = 'Правильно! Это Коралина в стране кошмаров.';
+        resultDiv.style.color = 'green';
+    } else {
+        resultDiv.textContent = 'Неправильно! Попробуйте еще раз.';
+        resultDiv.style.color = 'red';
+    }
+}
+</script>
+
+</body>
+</html>

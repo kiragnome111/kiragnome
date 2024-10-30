@@ -1,0 +1,370 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: gray;
+    background-image: url(https://avatars.mds.yandex.net/i?id=b6bc49d0849735b473fe1a7cf720f1c7938a386d-9096591-images-thumbs&n=13);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+header {
+    z-index: 1;
+    position: sticky;
+    top: 0px;
+    background-color: #59120c; /* Цвет фона */
+    color: white; /* Цвет текста */
+    padding: 30px 0; /* Отступы сверху и снизу */
+}
+
+
+.container {
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between; /* Разделяет логотип и навигацию */
+    align-items: center; /* Центрирует по вертикали */
+    max-width: 1200px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрирует контейнер */
+    padding: 0 20px; /* Отступы справа и слева */
+    margin-right: 170px;
+}
+
+.logo h1 {
+    margin: 0; /* Убирает отступы */
+}
+
+nav ul {
+    list-style-type: none; /* Убирает маркеры у списка */
+    margin: 0; /* Убирает отступы */
+    padding: 0; /* Убирает внутренние отступы */
+    display: flex; /* Выстраивает элементы в ряд */
+}
+
+nav ul li {
+    margin-left: 20px; /* Отступ между пунктами меню */
+}
+
+nav ul li a {
+    color: white; /* Цвет текста ссылок */
+    text-decoration: none; /* Убирает подчеркивание */
+    transition: color 0.3s; /* Плавный переход цвета */
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Цвет текста при наведении */
+}
+
+
+
+h3{
+    text-align: left;
+    color: white;
+    padding-left: 18%;
+    font-size: 55px;
+    margin-bottom: -10px;
+    margin-top: 0px;
+}
+
+h4{
+    text-align: left;
+    color: white;
+    padding-left: 18%;
+    font-size: 25px;
+    margin-bottom: -20px;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: left;
+    color: white;
+    text-align: center;
+}
+
+h2 { 
+    text-align: left;
+    color: white;
+    padding-left: 18%;
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.game-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0px;
+}
+
+.game {
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 30%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+      
+.game img {
+    margin-top: 20px;
+    margin-left: 50px;
+    object-fit: cover;
+    width: 340px;
+    height: 300px;
+    border-radius: 7px;
+}
+.game-details {
+    padding: 20px;
+    color: white;
+}
+
+.game-date, .game-price {
+     font-weight: bold;
+}
+        
+.game-description {
+    margin-top: 10px;
+}
+        
+.game-location {
+    margin: 10px 0;
+}
+        
+.button-container {
+    
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button {
+    background-color: #c22f25;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+}
+       
+.button:hover {
+
+    background-color: #6b1b15;  
+}
+
+
+
+
+
+
+
+.details {
+
+  color: black;
+  position: relative;
+  top: 20px;
+  display: block;
+  max-width: 900px;
+  margin: 0 auto 10px;
+  background: rgba(255,255,255,0.8);
+  border-radius: 7px;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.details::after {
+  position: absolute;
+  right: 24px;
+  top: 15px;
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-right: 3px solid #765182;
+  border-bottom: 3px solid black;
+  transform: rotate(-45deg);
+  transform-origin: center;
+  transition: .3s;
+}
+
+.details[open]::after {
+  transform: rotate(45deg);
+}
+
+.details[open] {
+  padding-bottom: 100px;
+}
+
+.details[open] .details__title {
+  margin-bottom: 23px;
+}
+
+.details__title {
+  background: #fff;
+  border-radius: 5px;
+  padding: 20px 24px;
+  font-size: 20px;
+  cursor: pointer;
+  list-style: none;
+  font-weight: 700;
+  transition: .3s;
+}
+
+.details__title::-webkit-details-marker {
+  display: none;
+}
+
+.details__content {
+  padding: 0 32px;
+  font-size: 18px;
+  margin-bottom: -50px;
+}
+
+.details__content p:last-child {
+  margin-bottom: 0;
+}
+.details__content p:first-child {
+  margin-top: 0;
+}
+
+
+
+h5{
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+
+.modal {
+    color: black;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+
+    background-color: white;
+    margin: 5% auto;
+    padding: 50px;
+    border: 1px solid #888;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    ext-decoration: none;
+    cursor: pointer;
+}
+       
+input[type="text"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+        
+input[type="submit"] {
+    background-color: #db3030;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition-duration: 0.5s;
+
+}
+input[type="submit"]:hover {
+    -webkit-box-shadow: 0px 5px 10px 10px rgba(219, 48, 48, 0.43);
+    -moz-box-shadow: 0px 5px 10px 10px rgba(219, 48, 48, 0.43);
+    box-shadow: 0px 5px 10px 10px rgba(219, 48, 48, 0.43);
+}
+
+
+footer {
+    background-color: #222d47;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 150px; /* Задайте нужный размер логотипа */
+}
+
+.links, .social-media {
+    margin: 10px 0;
+}
+
+.footera {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.footera:hover {
+    
+}
+
+
+
+
+
+
+
+footer {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 150px; /* Задайте нужный размер логотипа */
+}
+
+.links, .social-media {
+    margin: 10px 0;
+}
+
+.footera {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.footera:hover {
+    
+}

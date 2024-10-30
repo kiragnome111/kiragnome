@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="расписание.css">
+	<title></title>
+</head>
+<body>
+
+
+<header>
+        <div class="container">
+            <div class="logo">
+                <h1>КвизМания</h1>
+            </div>
+            <nav>
+                <ul>
+                    <b><li><a href="file:///C:/Users/User/Desktop/сайт2/квиз.html">Главная</a></li></b>
+                    <b><li><a href="file:///C:/Users/User/Desktop/сайт2/расписание.html?">Расписание</a></li></b>
+                    <b><li><a href="file:///C:/Users/User/Desktop/сайт2/vop1.html">Квиз</a></li></b>
+            
+                </ul>
+            </nav>
+        </div>
+ </header>
+<br><br><br>
+
+
+<h2>Расписание игр</h2>
+ <div class="game-container">
+        <div class="game">
+            <img src="https://i.pinimg.com/736x/62/9f/da/629fdaff60dafe9c1b114acf5f4ea5b7.jpg" alt="Сериалы">
+            <div class="game-details">
+                <div class="game-date">22 октября ВТ 19:00 Сериалы</div>
+                <div class="game-price">500 руб/чел</div>
+                <div class="game-description">
+                    Ура! Игра только по сериалам!<br>Игра не просто угадай сериал по кадру, будут интересные и порой закрученные вопросы. (75 вопросов)
+                </div>
+                <div class="game-location">
+                    <strong>Место проведения:</strong><br>Центр Молодёжных Инициатив Ковёр ( г.Нижнекамск, Школьный бул., 7/2) 
+                </div>  
+                <div class="button-container">
+                    <button class="button" onclick="showModal()">ЗАПИСАТЬСЯ НА ИГРУ</button>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h5>Регистрация на игру:</h5>
+        <form>
+            <label for="username">Как к Вам обращаться?</label>
+            <input type="text" id="username" name="username" placeholder="Ваше имя или прозвище :)" required>
+
+            <label for="team-name">Какое название у вашей команды?</label>
+            <input type="text" id="team-name" name="team-name" placeholder="Если нет команды, напишите БК" required>
+
+            <label for="teamSize">Сколько игроков в вашей команде?</label>
+            <select id="teamSize" name="team-size" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+
+            <label for="phone">Ваш номер телефона</label>
+            <input type="tel" id="phone" name="phone" placeholder="Введите номер телефона" required>
+
+            <label>Хотите ли вы, чтобы к вам добавили легионеров?</label><br>
+            <input type="radio" id="yes" name="legioners" value="yes" required>
+            <label for="yes">Да, хотим! Вместе веселее!</label>
+            <br>
+            <input type="radio" id="no" name="legioners" value="no" required>
+            <label for="no">Нет, мы хотим играть своим составом, никого добавлять не нужно.</label><br><br>
+
+            <input type="submit" value="Зарегистрироваться">
+        </form>
+    </div>
+</div>
+                    
+                </div>
+            </div>
+        </div>
+<div class="game">
+            <img src="https://i.pinimg.com/564x/97/68/ba/9768ba2a551cdaa7b1c5d9e095f6006b.jpg" alt="Сериалы">
+            <div class="game-details">
+                <div class="game-date">27 октября ВС 19:00 Кино, мультфильмы, сериалы</div>
+                <div class="game-price">500 руб/чел</div>
+                <div class="game-description">
+                    Вас ждёт смесь медийки и вопросов на раскрутку, причём все вопросы будут по известным фильмам, мультфильмам и сериалам.(75 вопросов)
+                </div>
+                <div class="game-location">
+                    <strong>Место проведения:</strong><br>Центр Молодёжных Инициатив Ковёр ( г.Нижнекамск, Школьный бул., 7/2) 
+                </div>
+                <div class="button-container" >
+                    <button class="button" onclick="showModal()">ЗАПИСАТЬСЯ НА ИГРУ</button>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h5>Регистрация на игру:</h5>
+        <form>
+            <label for="username">Как к Вам обращаться?</label>
+            <input type="text" id="username" name="username" placeholder="Ваше имя или прозвище :)" required>
+
+            <label for="team-name">Какое название у вашей команды?</label>
+            <input type="text" id="team-name" name="team-name" placeholder="Если нет команды, напишите БК" required>
+
+            <label for="teamSize">Сколько игроков в вашей команде?</label>
+            <select id="teamSize" name="team-size" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+
+            <label for="phone">Ваш номер телефона</label>
+            <input type="tel" id="phone" name="phone" placeholder="Введите номер телефона" required>
+
+            <label>Хотите ли вы, чтобы к вам добавили легионеров?</label><br>
+            <input type="radio" id="yes" name="legioners" value="yes" required>
+            <label for="yes">Да, хотим! Вместе веселее!</label>
+            <br>
+            <input type="radio" id="no" name="legioners" value="no" required>
+            <label for="no">Нет, мы хотим играть своим составом, никого добавлять не нужно.</label><br><br>
+
+            <input type="submit" value="Зарегистрироваться">
+        </form>
+    </div>
+</div>
+                    
+                </div>
+            </div>
+        </div>
+</div>
+<br><br><br>
+<div class="raspisanie">
+    <div class="game-container">
+        <div class="game">
+            <img src="https://i.pinimg.com/564x/36/79/a1/3679a15f975c5b690a8e74dbcf2e3292.jpg" alt="Сериалы">
+            <div class="game-details">
+                <div class="game-date">30 октября СР 19:00 Хэллоуин</div>
+                <div class="game-price">500 руб/чел</div>
+                <div class="game-description">
+                    Муа-ха-ха! Вот и приближается день всех святых!Берите кресты, чеснок и серебряные клинки для сражения с нечистью! Будем спрашивать про страшные истории, фильмы ужасов и разбавим юмором.Косплей очень приветствуется!
+(95 вопросов)
+                </div>
+                <div class="game-location">
+                    <strong>Место проведения:</strong><br>Центр Молодёжных Инициатив Ковёр ( г.Нижнекамск, Школьный бул., 7/2) 
+                </div>
+                <div class="button-container">
+                    <button class="button" onclick="showModal()">ЗАПИСАТЬСЯ НА ИГРУ</button>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h5>Регистрация на игру:</h5>
+        <form>
+            <label for="username">Как к Вам обращаться?</label>
+            <input type="text" id="username" name="username" placeholder="Ваше имя или прозвище :)" required>
+
+            <label for="team-name">Какое название у вашей команды?</label>
+            <input type="text" id="team-name" name="team-name" placeholder="Если нет команды, напишите БК" required>
+
+            <label for="teamSize">Сколько игроков в вашей команде?</label>
+            <select id="teamSize" name="team-size" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+
+            <label for="phone">Ваш номер телефона</label>
+            <input type="tel" id="phone" name="phone" placeholder="Введите номер телефона" required>
+
+            <label>Хотите ли вы, чтобы к вам добавили легионеров?</label><br>
+            <input type="radio" id="yes" name="legioners" value="yes" required>
+            <label for="yes">Да, хотим! Вместе веселее!</label>
+            <br>
+            <input type="radio" id="no" name="legioners" value="no" required>
+            <label for="no">Нет, мы хотим играть своим составом, никого добавлять не нужно.</label><br><br>
+
+            <input type="submit" value="Зарегистрироваться">
+        </form>
+    </div>
+</div>
+                    
+                </div>
+            </div>
+        </div>
+<div class="game">
+            <img src="https://i.pinimg.com/564x/ae/d3/ab/aed3ab9d3139a326879276633e4beecb.jpg" alt="Сериалы">
+            <div class="game-details">
+                <div class="game-date">03 ноября ВС 18:00 Угадай мелодию: ностальжи</div>
+                <div class="game-price">500 руб/чел</div>
+                <div class="game-description">
+                    Все треки будут только до 1999 года выпуска.<br> Песни разных стран и разнообразных жанров, чтобы в полной мере погрузиться в ностальгию по музыке ХХ века! Русской музыки будет примерно 40%. зарубежной 60%.(105 вопросов)
+                </div><br>
+                <div class="game-location">
+                    <strong>Место проведения:</strong><br>Центр Молодёжных Инициатив Ковёр ( г.Нижнекамск, Школьный бул., 7/2) 
+                </div>
+                <div class="button-container" >
+                        
+                    <button class="button" onclick="showModal()">ЗАПИСАТЬСЯ НА ИГРУ</button>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h5>Регистрация на игру:</h5>
+        <form>
+            <label for="username">Как к Вам обращаться?</label>
+            <input type="text" id="username" name="username" placeholder="Ваше имя или прозвище :)" required>
+
+            <label for="team-name">Какое название у вашей команды?</label>
+            <input type="text" id="team-name" name="team-name" placeholder="Если нет команды, напишите БК" required>
+
+            <label for="teamSize">Сколько игроков в вашей команде?</label>
+            <select id="teamSize" name="team-size" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+
+            <label for="phone">Ваш номер телефона</label>
+            <input type="tel" id="phone" name="phone" placeholder="Введите номер телефона" required>
+
+            <label>Хотите ли вы, чтобы к вам добавили легионеров?</label><br>
+            <input type="radio" id="yes" name="legioners" value="yes" required>
+            <label for="yes">Да, хотим! Вместе веселее!</label>
+            <br>
+            <input type="radio" id="no" name="legioners" value="no" required>
+            <label for="no">Нет, мы хотим играть своим составом, никого добавлять не нужно.</label><br><br>
+
+            <input type="submit" value="Зарегистрироваться">
+        </form>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+
+
+
+<br><br><br>
+
+
+
+ <div class="game-container">
+        <div class="game">
+            <img src="https://i.pinimg.com/564x/05/70/37/057037ae4a81271ebb1b4bba9dffb792.jpg" alt="Сериалы">
+            <div class="game-details">
+                <div class="game-date">05 ноября ВТ 19:00 Телеквиз: Кино Мультфильмы Сериалы</div>
+                <div class="game-price">500 руб/чел</div>
+                <div class="game-description">
+                    Вас ждут аналоги телепередач «Кто хочет стать миллионером?», «Поле чудес», «Угадай мелодию». «Слабое звено», «Где логика?», «Что? Где? Когда?».
+«Своя игра» и другие! Все вопросы по кино, мультфильмам и сериалам! (76 вопросов)
+                </div>
+                <div class="game-location">
+                    <strong>Место проведения:</strong><br>Центр Молодёжных Инициатив Ковёр ( г.Нижнекамск, Школьный бул., 7/2) 
+                </div>
+                <div class="button-container">
+                    <button class="button" onclick="showModal()">ЗАПИСАТЬСЯ НА ИГРУ</button>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h5>Регистрация на игру:</h5>
+        <form>
+            <label for="username">Как к Вам обращаться?</label>
+            <input type="text" id="username" name="username" placeholder="Ваше имя или прозвище :)" required>
+
+            <label for="team-name">Какое название у вашей команды?</label>
+            <input type="text" id="team-name" name="team-name" placeholder="Если нет команды, напишите БК" required>
+
+            <label for="teamSize">Сколько игроков в вашей команде?</label>
+            <select id="teamSize" name="team-size" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+
+            <label for="phone">Ваш номер телефона</label>
+            <input type="tel" id="phone" name="phone" placeholder="Введите номер телефона" required>
+
+            <label>Хотите ли вы, чтобы к вам добавили легионеров?</label><br>
+            <input type="radio" id="yes" name="legioners" value="yes" required>
+            <label for="yes">Да, хотим! Вместе веселее!</label>
+            <br>
+            <input type="radio" id="no" name="legioners" value="no" required>
+            <label for="no">Нет, мы хотим играть своим составом, никого добавлять не нужно.</label><br><br>
+
+            <input type="submit" value="Зарегистрироваться">
+        </form>
+    </div>
+</div>
+                    
+                </div>
+            </div>
+        </div>
+<div class="game">
+            <img src="https://i.pinimg.com/564x/c7/08/02/c708024e7a7f0f13e731eb70a4ae7848.jpg" alt="Сериалы">
+            <div class="game-details">
+                <div class="game-date">04 ноября ПН 18:00 Караоке-квиз: Русские хиты 2000х</div>
+                <div class="game-price">500 руб/чел</div>
+                <div class="game-description">
+                    На этом квизе будут самые популярные русские треки из нулевых! ВАЖНО! Это НЕ «Угадай мелодию». все вопросы связаны с текстами песен. (75 вопросов)
+                </div><br>
+                <div class="game-location">
+                    <strong>Место проведения:</strong><br>Центр Молодёжных Инициатив Ковёр ( г.Нижнекамск, Школьный бул., 7/2) 
+                </div>
+                <div class="button-container" >
+                    <button class="button" onclick="showModal()">ЗАПИСАТЬСЯ НА ИГРУ</button>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h5>Регистрация на игру:</h5>
+        <form>
+            <label for="username">Как к Вам обращаться?</label>
+            <input type="text" id="username" name="username" placeholder="Ваше имя или прозвище :)" required>
+
+            <label for="team-name">Какое название у вашей команды?</label>
+            <input type="text" id="team-name" name="team-name" placeholder="Если нет команды, напишите БК" required>
+
+            <label for="teamSize">Сколько игроков в вашей команде?</label>
+            <select id="teamSize" name="team-size" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+
+            <label for="phone">Ваш номер телефона</label>
+            <input type="tel" id="phone" name="phone" placeholder="Введите номер телефона" required>
+
+            <label>Хотите ли вы, чтобы к вам добавили легионеров?</label><br>
+            <input type="radio" id="yes" name="legioners" value="yes" required>
+            <label for="yes">Да, хотим! Вместе веселее!</label>
+            <br>
+            <input type="radio" id="no" name="legioners" value="no" required>
+            <label for="no">Нет, мы хотим играть своим составом, никого добавлять не нужно.</label><br><br>
+
+            <input type="submit" value="Зарегистрироваться">
+        </form>
+    </div>
+</div>
+                    
+                </div>
+            </div>
+        </div>
+</div>
+<br><br><br>
+<div class="raspisanie">
+    <div class="game-container">
+        <div class="game">
+            <img src="https://i.pinimg.com/564x/78/98/f1/7898f1b2f2c32658702684236a397575.jpg" alt="Сериалы">
+            <div class="game-details">
+                <div class="game-date">08 ноября ПТ 19:00 Квиз-вечеринка: Танцуем и поём</div>
+                <div class="game-price">500 руб/чел</div>
+                <div class="game-description">
+                    Совместить Караоке-квиз и Угадай мелодию? Можем, умеем, практикуем! Готовьтесь петь и танцевать на нашем квизе-вечеринке! ВАЖНО: игра может длиться около 3 часов! Русского и зарубежного примерно поровну. (75 вопросов)
+                </div>
+                <div class="game-location">
+                    <strong>Место проведения:</strong><br>Центр Молодёжных Инициатив Ковёр ( г.Нижнекамск, Школьный бул., 7/2) 
+                </div>
+                <div class="button-container">
+                    <button class="button" onclick="showModal()">ЗАПИСАТЬСЯ НА ИГРУ</button>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h5>Регистрация на игру:</h5>
+        <form>
+            <label for="username">Как к Вам обращаться?</label>
+            <input type="text" id="username" name="username" placeholder="Ваше имя или прозвище :)" required>
+
+            <label for="team-name">Какое название у вашей команды?</label>
+            <input type="text" id="team-name" name="team-name" placeholder="Если нет команды, напишите БК" required>
+
+            <label for="teamSize">Сколько игроков в вашей команде?</label>
+            <select id="teamSize" name="team-size" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+
+            <label for="phone">Ваш номер телефона</label>
+            <input type="tel" id="phone" name="phone" placeholder="Введите номер телефона" required>
+
+            <label>Хотите ли вы, чтобы к вам добавили легионеров?</label><br>
+            <input type="radio" id="yes" name="legioners" value="yes" required>
+            <label for="yes">Да, хотим! Вместе веселее!</label>
+            <br>
+            <input type="radio" id="no" name="legioners" value="no" required>
+            <label for="no">Нет, мы хотим играть своим составом, никого добавлять не нужно.</label><br><br>
+
+            <input type="submit" value="Зарегистрироваться">
+        </form>
+    </div>
+</div>
+                    
+                </div>
+            </div>
+        </div>
+<div class="game">
+            <img src="https://i.pinimg.com/564x/fd/0d/6b/fd0d6bfe3ca07114d7b3e5365f5152dc.jpg" alt="Сериалы">
+            <div class="game-details">
+                <div class="game-date">10 ноября ВС 15:00 Властелин колец</div>
+                <div class="game-price">500 руб/чел</div>
+                <div class="game-description"><br>
+                    Хоть и Гендальф говорил, что "мы не выбираем времена", как раз-таки мы выбрали время для квиза по культовой кинотрилогии! Квиз строго по трём фильмам, без "Хоббита" и книг! (56 вопросов)
+                </div><br>
+                <div class="game-location">
+                    <strong>Место проведения:</strong><br>Центр Молодёжных Инициатив Ковёр ( г.Нижнекамск, Школьный бул., 7/2) 
+                </div>
+                <div class="button-container" >
+                        
+                    <button class="button" onclick="showModal()">ЗАПИСАТЬСЯ НА ИГРУ</button>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h5>Регистрация на игру:</h5>
+        <form>
+            <label for="username">Как к Вам обращаться?</label>
+            <input type="text" id="username" name="username" placeholder="Ваше имя или прозвище :)" required>
+
+            <label for="team-name">Какое название у вашей команды?</label>
+            <input type="text" id="team-name" name="team-name" placeholder="Если нет команды, напишите БК" required>
+
+            <label for="teamSize">Сколько игроков в вашей команде?</label>
+            <select id="teamSize" name="team-size" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+
+            <label for="phone">Ваш номер телефона</label>
+            <input type="tel" id="phone" name="phone" placeholder="Введите номер телефона" required>
+
+            <label>Хотите ли вы, чтобы к вам добавили легионеров?</label><br>
+            <input type="radio" id="yes" name="legioners" value="yes" required>
+            <label for="yes">Да, хотим! Вместе веселее!</label>
+            <br>
+            <input type="radio" id="no" name="legioners" value="no" required>
+            <label for="no">Нет, мы хотим играть своим составом, никого добавлять не нужно.</label><br><br>
+
+            <input type="submit" value="Зарегистрироваться">
+        </form>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+
+<script>
+    function showModal() {
+        document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target === document.getElementById("myModal")) {
+            closeModal();
+        }
+        document.querySelector('input[type="submit"]').addEventListener('click',() => {
+        alert('Вы зарегистрировались на игру! Ждём Вас:)')
+    })
+    }
+</script>
+
+<br><br><br>
+
+
+<footer>
+    <div class="footer-container">
+        <div class="logo">
+            <img src="C:\Users\User\Desktop\сайт2\Лого.png" alt="Логотип">
+        </div>
+        <div class="links">
+            <a class="footera" href="file:///C:/Users/User/Desktop/сайт2/квиз.html">Главная страница</a>
+            <a class="footera" href="file:///C:/Users/User/Desktop/сайт2/расписание.html">Расписание</a>
+        </div>
+        <div class="social-media">
+            <a class="footera" href="ссылка_на_facebook">Facebook</a>
+            <a class="footera" href="ссылка_на_instagram">Instagram</a>
+            <a class="footera" href="ссылка_на_twitter">Twitter</a>
+            <a class="footera" href="ссылка_на_vk">VK</a>
+        </div>
+    </div>
+</footer>
+
+
+
+
+</body>
+</html>
